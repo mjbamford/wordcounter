@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.css">
+    <script src="src/index.js"></script>
+    <title>WordCounter</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="measure sans-serif pa4">
+            <form>
+                <div class="flex flex-column mv2">
+                    <label for="editor" class="mv2">
+                        Enter your text:
+                    </label>
+                    <textarea id="editor"></textarea>
+                </div>
+                <p id="counter" class="mb2">Word Count: 0</p>
+                <div class="mv2 flex flex-column">
+                    <label for="progress" class="mv2">
+                        Progress
+                    </label>
+                    <progress value="0" id="progress" clas="bn">0</progress>
+                </div>
+                <div class="flex flex-column mv2">
+                    <button id="saveButton" class="pv2 ph3">
+                        Save
+                    </button>
+                    <div id="alertBox" class="mv2"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
